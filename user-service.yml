@@ -62,4 +62,4 @@ eureka:
 
 application:
 
-  version: user-service-v4
+  version: user-service-v7
