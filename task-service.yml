@@ -58,4 +58,4 @@ server:
 
 application:
 
-  version: task-service-v5
+  version: task-service-v6
