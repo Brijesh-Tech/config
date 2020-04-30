@@ -1,24 +1,61 @@
 spring:
+
   application:
+
     name: task-service
+
   datasource:
-    url: jdbc:mysql://localhost:3306/task
+
+    url: jdbc:mysql://localhost:3306/tasks
+
     username: root
-    password: root
+
+    password: C0dingS@int
+
     
+
   jpa:
+
     generate-ddl: true
+
     database-platform: org.hibernate.dialect.MySQL5Dialect
+
     hibernate:
+
       ddl-auto: update
 
-server:
-  port: 8083
-  
-#Eureka
-eureka:
-  client:
-   service-url:
-    defaultZone: http://localhost:8761/eureka/
-   
+management:
 
+  security:
+
+    enabled: false
+
+  endpoints:
+
+    web:
+
+      exposure:
+
+        include: 
+
+          - "*"
+
+#Eureka
+
+eureka:
+
+  client:
+
+    service-url:
+
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+
+  port: 8083
+
+
+
+application:
+
+  version: task-service-v4
